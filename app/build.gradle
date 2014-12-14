@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "com.jparkie.aizoban"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 14
+        versionName "1.0.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Android Support Library:
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:palette-v7:21.0.3'
+
+    // Concurrency:
+    compile 'io.reactivex:rxjava:1.0.2'
+    compile 'io.reactivex:rxandroid:0.23.0'
+
+    // Event Bus:
+    compile 'de.greenrobot:eventbus:2.4.0'
+
+    // Networking:
+    compile 'com.squareup.okhttp:okhttp:2.1.0'
+    compile 'com.squareup.okio:okio:1.1.0'
+    // Cache:
+    compile 'com.jakewharton:disklrucache:2.0.2'
+
+    // Databasing:
+    compile 'nl.qbusict:cupboard:2.1.1'
+
+    // HTML Parsing:
+    compile 'org.jsoup:jsoup:1.8.1'
+
+    // Imaging:
+    compile 'com.github.bumptech.glide:glide:3.4.0'
+
+    // UI:
+    compile 'com.melnykov:floatingactionbutton:1.1.0'
+    compile 'com.makeramen:roundedimageview:1.5.0'
+}
