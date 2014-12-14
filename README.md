@@ -1,6 +1,8 @@
 Aizoban
 =======
 
+![Feature Graphic](https://cloud.githubusercontent.com/assets/9499097/5429148/16e40ee2-83af-11e4-9588-f52f1104b9c4.jpg)
+
 An online and offline Manga reading application for Android.
 
 This Android application allows users to browse a catalogue of mangas from various sources in a local SQLite database. This catalogue can be searched by name and filtered by genres, status, name, and rank. Similarly, users can fetch latest updates for their chosen source. Clicking a manga, launches the MangaActivity in which they can view more information about a chosen manga and a list of available chapters. From this activity, users can either read a chapter online or add it to queue for a later download. When reading a chapter, the user has various reading controls and image gestures. Finally, the application allows the users to maintain their own libraries of downloaded manga, favourite manga, and recent chapters.
@@ -49,6 +51,16 @@ This library was used to conduct all the application's HTTP requests. It was use
 - **RxJava**: https://github.com/ReactiveX/RxJava
 
 This library was relied upon heavily to create an Observable API to fetch my data. Furthermore, it was used to handle most Activity- or Fragment- bound asynchronous tasks. I really enjoyed creating an Observable API as I had complete control of the execution of the code so that in the Activities and Fragments, data would be fetched asynchronously so the UI thread will not be blocked. Meanwhile, the download manager can transpose the API call to blocking alternatives to maintain a synchronous flow of execution. Finally, the rich API set of RxJava eased composing and refractoring implementations of user cases (i.e. mapping cursors to data, zipping multiple cursors, or handling errors...).
+
+## Screenshots
+![1](https://cloud.githubusercontent.com/assets/9499097/5429149/25b54f9e-83af-11e4-88a1-52da523862dd.png)
+![2](https://cloud.githubusercontent.com/assets/9499097/5429152/25b9383e-83af-11e4-9116-fee08b1b257d.png)
+![3](https://cloud.githubusercontent.com/assets/9499097/5429150/25b6a038-83af-11e4-9f10-a7333b569cca.png)
+![4](https://cloud.githubusercontent.com/assets/9499097/5429153/25baf610-83af-11e4-87cb-6372988bc76a.png)
+![5](https://cloud.githubusercontent.com/assets/9499097/5429151/25b889de-83af-11e4-9288-37b3757a6ec1.png)
+![6](https://cloud.githubusercontent.com/assets/9499097/5429155/25bcb338-83af-11e4-8d79-e5d1a9ff77a7.png)
+![7](https://cloud.githubusercontent.com/assets/9499097/5429154/25bc361a-83af-11e4-9dd6-a80693983405.png)
+![8](https://cloud.githubusercontent.com/assets/9499097/5429156/25c10622-83af-11e4-8ec8-a67a434bcc38.png)
 
 ## License
 
